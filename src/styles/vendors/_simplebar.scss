@@ -1,0 +1,9 @@
+.simplebar-content {
+  display: flex;
+  flex-direction: column;
+  padding: var(--zgs-sidebar-nav-padding-y) var(--zgs-sidebar-nav-padding-x);
+}
+
+.simplebar-wrapper {
+  margin: calc(var(--zgs-sidebar-nav-padding-y) * -1) calc(var(--zgs-sidebar-nav-padding-x) * -1);
+}

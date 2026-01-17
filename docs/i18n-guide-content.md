@@ -24,13 +24,13 @@ Helper `renderI18nWithHighlight` cho phép:
 
 ## 2. Quy tắc chung (BẮT BUỘC)
 
-### ❌ KHÔNG ĐƯỢC
+### KHÔNG ĐƯỢC
 - Không dùng HTML (`<b>`, `<span>`, `<ul>`, …)
 - Không dùng inline CSS
 - Không chèn JSX
 - Không dùng markdown phức tạp hoặc không được quy ước
 
-### ✅ ĐƯỢC PHÉP
+### ĐƯỢC PHÉP
 - Dùng các ký hiệu định dạng được hỗ trợ
 - Dùng token `{{token}}`
 - Dùng marker list `[[ul]]`, `[[ol]]`
@@ -107,35 +107,29 @@ Dòng 1 \n Dòng 2 \n Không cần <br />
 - Bold / italic / underline / strikeline
 - Token {{token}}
 - Helper sẽ render đúng trong `<li>`.
-## 8. Những lỗi thường gặp ❌
-   - ❌ Dùng HTML
+
+## 8. Những lỗi thường gặp
+   - Dùng HTML
    - ``` <b>text</b>```
    - ``` <span style="color:red">text</span> ```
-   - ❌ Thiếu marker kết thúc list
+   - Thiếu marker kết thúc list
 ```
      [[ul]]
      - item 1
      - item 2
      (thiếu [[/ul]])
 ```
-  - ❌ Đổi tên token
+  - Đổi tên token
   - {{Right}} ≠ {{right}}
-## 9. Checklist cho Translator ✅
+
+## 9. Checklist cho Translator
 - Không có HTML
 - Token dùng đúng {{token}}
 - List có đủ [[ul]] / [[ol]] và [[/ul]] / [[/ol]]
 - Không đổi tên token
 - Không thêm khoảng trắng lạ trước - hoặc 1.
-## 10. Checklist cho Developer ✅
+## 10. Checklist cho Developer
 - Style / màu đặt trong code
 - Dùng renderI18nWithHighlight
 - Không render raw string content
 - Không dùng dangerouslySetInnerHTML
-## 11. Tóm tắt
-- Language = nội dung + cấu trúc
-- Code = style + hành vi
-- Tuân thủ quy ước này giúp:
-- Nội dung rõ ràng
-- Dịch dễ
-- Code an toàn
-- Mở rộng lâu dài

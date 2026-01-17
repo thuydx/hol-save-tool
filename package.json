@@ -1,0 +1,50 @@
+{
+  "name": "@thuydx/hol-save-tool",
+  "version": "0.1.0",
+  "packageManager": "yarn@4.12.0",
+  "private": true,
+  "license": "MIT",
+  "description": "House of legacy",
+  "author": "ThuyDX",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint"
+  },
+  "config": {
+    "theme": "modern"
+  },
+  "dependencies": {
+    "@coreui/coreui": "^5.5.0",
+    "@coreui/icons": "^3.0.1",
+    "@coreui/icons-react": "^2.3.0",
+    "@coreui/react": "^5.9.2",
+    "@coreui/utils": "^2.0.2",
+    "@popperjs/core": "^2",
+    "@reduxjs/toolkit": "^2.11.0",
+    "classnames": "^2.5.1",
+    "jszip": "^3.10.1",
+    "next": "16.1.0",
+    "react": "19.2.1",
+    "react-dom": "19.2.1",
+    "react-redux": "^9.2.0",
+    "simplebar-react": "^3.3.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.28.5",
+    "@babel/preset-react": "^7.28.5",
+    "@eslint/eslintrc": "^3.3.3",
+    "@types/node": "^24.10.1",
+    "@types/prop-types": "^15.7.15",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "babel-plugin-react-compiler": "1",
+    "eslint": "^9.39.1",
+    "eslint-config-next": "^16.1.0",
+    "next-transpile-modules": "^10.0.1",
+    "prop-types": "^15.8.1",
+    "sass": "^1.94.2",
+    "typescript": "^5.9.3"
+  }
+}
